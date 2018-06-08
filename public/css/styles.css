@@ -15,7 +15,35 @@ body {
     padding: 10px; 
     background-color: white; 
     border-radius: 20px; 
+}
 
+form {
+    height: 250px; 
+    width: 300px; 
+    text-align: center;
+    background-color: #556B2F;
+    color: white; 
+    border-radius: 20px;
+    padding: 20px;  
+    position: fixed;
+    margin-left: 100px; 
+}
+
+.add {
+    display: block; 
+    margin: 20px auto;
+    height: 30px;
+    width: 200px; 
+    border-radius: 5px; 
+}
+
+::placeholder {
+    color: #556B2F;
+}
+
+input:focus {
+    border-color: red; 
+    outline: none; 
 }
 
 img {
@@ -36,22 +64,9 @@ h3 {
     height: 50px; 
     background-color: #556B2F;
     color: white; 
-    margin: 10px auto; 
+    margin: 20px auto; 
     padding: 30px; 
     border-radius: 20px; 
-    
-}
-
-.cartlist {
-    width: 760px;
-    min-height: 300px; 
-    background-color: #556B2F	;
-    margin: 10px auto; 
-    padding: 30px; 
-    border-radius: 20px; 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 p {
@@ -61,13 +76,49 @@ p {
 
 div.item {
     width: 150px;
-    height: 80px;
+    height: 150px;
     padding: 5px; 
     background-color: white;
     box-shadow: 5px 5px 5px black;
     display: flex;
     flex-direction: column;
     margin: 15px; 
+    border-radius: 5px; 
+}
+
+.material-icons {
+    text-align: end; 
+    cursor: default;
+}
+
+.item-container {
+    background-color: #556B2F;
+    border-radius: 20px; 
+    width: 760px;
+    min-height: 300px; 
+    padding: 30px; 
+    margin-left: 500px;
+    margin-bottom: 20px; 
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.quantity {
+    height: 20px; 
+    margin: 10px 0; 
+    width: 50px; 
+    display: inline-block; 
+    border-radius: 5px; 
+
+}
+
+button {
+    width: 75px;
+    font-size: 16px; 
+    border-radius: 5px; 
+    color: #556B2F;
 }
 
 

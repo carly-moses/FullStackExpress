@@ -1,6 +1,6 @@
 "use strict";
 function CartService($http) {
-  // Declare the functions to make GET, POST, PUT, and DELETE requests from this service.
+  
   const getAllItems = () => {
     return $http({
       method: "GET",
@@ -8,10 +8,36 @@ function CartService($http) {
     });
   };
 
-    return {
-        getAllItems
-    };
-}
+  const addItem = (item) => {
+    return $http({
+      method: "POST",
+      url: "/portal/cart-items",
+      data: item
+    });
+  };
+
+  const removeItem = (id) =>{
+    return $http({
+      method: "DELETE",
+      url: "/portal/cart-items/" + id,
+    });
+  };
+
+  const updateItem = (item) => {
+    return $http({
+      method: "PUT",
+      url: "portal/cart-items/" + item.id,
+      data: item
+    });
+  };
+
+  return {
+      getAllItems,
+      addItem,
+      removeItem,
+      updateItem
+  };
+};
 
 angular
   .module("cartApp")
