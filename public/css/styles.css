@@ -5,36 +5,34 @@
 
 body {
     background-image: url("images/strawberries.jpg");
-
 }
 
 .logo {
     display: flex;
     margin: 15px; 
-    width: 270px;
+    width: 140px;
     padding: 10px; 
     background-color: white; 
     border-radius: 20px; 
 }
 
 form {
-    height: 250px; 
-    width: 300px; 
+    height: 185px; 
+    width: 240px; 
     text-align: center;
     background-color: #556B2F;
     color: white; 
     border-radius: 20px;
     padding: 20px;  
-    position: fixed;
-    margin-left: 100px; 
+    margin: 10px auto;
 }
 
 .add {
-    display: block; 
-    margin: 20px auto;
-    height: 30px;
-    width: 200px; 
-    border-radius: 5px; 
+    display: block;
+    margin: 10px auto;
+    height: 25px;
+    width: 240px;
+    border-radius: 5px;
 }
 
 ::placeholder {
@@ -47,25 +45,24 @@ input:focus {
 }
 
 img {
-    width: 50px;
-    height: 50px; 
+    width: 30px;
+    height: 30px; 
 }
 
 h1 {
-    font-size: 50px; 
+    font-size: 25px; 
     color: #556B2F;
     margin-left: 10px; 
 }
 
 h3 {
-    text-align: center;
-    font-size: 50px;
-    width: 760px;
-    height: 50px; 
+    text-align: center; 
+    font-size: 35px;
+    width: 240px;
+    padding: 10px 20px; 
     background-color: #556B2F;
     color: white; 
-    margin: 20px auto; 
-    padding: 30px; 
+    margin: 5px auto; 
     border-radius: 20px; 
 }
 
@@ -75,14 +72,14 @@ p {
 }
 
 div.item {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 125px;
     padding: 5px; 
     background-color: white;
     box-shadow: 5px 5px 5px black;
     display: flex;
     flex-direction: column;
-    margin: 15px; 
+    margin: 10px auto; 
     border-radius: 5px; 
 }
 
@@ -93,16 +90,14 @@ div.item {
 
 .item-container {
     background-color: #556B2F;
-    border-radius: 20px; 
-    width: 760px;
-    min-height: 300px; 
-    padding: 30px; 
-    margin-left: 500px;
+    width: 240px;
+    min-height: 200px; 
+    padding: 20px; 
+    margin: 0 auto; 
     margin-bottom: 20px; 
     border-radius: 20px; 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .quantity {
@@ -111,7 +106,6 @@ div.item {
     width: 50px; 
     display: inline-block; 
     border-radius: 5px; 
-
 }
 
 button {
@@ -121,5 +115,72 @@ button {
     color: #556B2F;
 }
 
+@media only screen and (min-width: 1200px) {
+.logo {
+    margin: 15px; 
+    width: 270px;
+    padding: 10px; 
+}
+
+form {
+    height: 250px; 
+    width: 300px;  
+    position: fixed;
+    margin-left: 100px; 
+}
+
+img {
+    width: 50px;
+    height: 50px; 
+}
+
+.add {
+    height: 30px;
+    width: 200px; 
+    margin: 20px auto; 
+}
+
+h1 {
+    font-size: 50px; 
+    margin-left: 10px; 
+}
+    
+h3 {
+    font-size: 50px;
+    width: 760px;
+    height: 50px;  
+    margin: 20px auto; 
+    padding: 30px; 
+}
+
+div.item {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    margin: 15px; 
+}
+
+.item-container {
+    width: 760px;
+    min-height: 300px; 
+    padding: 30px; 
+    margin-left: 500px;
+    margin-bottom: 20px; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.quantity {
+    height: 20px; 
+    margin: 10px 0; 
+    width: 50px; 
+}
+
+button {
+    width: 75px;
+    font-size: 16px; 
+}
+
+}
 
 
