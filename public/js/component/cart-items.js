@@ -53,6 +53,7 @@ const cartItems = {
     };
 
     vm.updateItem = (item) =>{
+      console.log(item);
       CartService.updateItem(item).then((response)=>{
         vm.items = response.data; 
       });
@@ -63,6 +64,14 @@ const cartItems = {
         vm.items = response.data; 
       });
     };
+    // <button class="increment" ng-click="$ctrl.incrementQty(item)"> + </button>
+    // <button class="decrement" ng-click="$ctrl.decrementQty(item)"> - </button>
+
+    // vm.incrementQty = (item) =>{
+    //   vm.item ++;
+    //   vm.updateItem(item); 
+
+    // }
   }]
 };
 

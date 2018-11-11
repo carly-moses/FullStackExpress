@@ -1,0 +1,5 @@
+{
+    "name": "Carly's Cart",
+    "description": "AngularJS with the use of Express and PostgreSQL",
+    "image": "heroku/nodejs"
+    }
